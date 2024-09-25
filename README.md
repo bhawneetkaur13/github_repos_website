@@ -53,7 +53,9 @@ Step-by-Step Instructions:
 
 4. Step 4: Set up Environment Variables
     1. In the root of your project, create a .env file by running:
-       touch .env
+       touch .env  (for mac)
+       OR
+       echo. > .env (for windows)
     2. Open the .env file and add the following line:
         REACT_APP_GITHUB_API=https://api.github.com/orgs/godaddy/repos
 
