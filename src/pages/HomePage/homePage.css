@@ -20,6 +20,7 @@
     border-radius: 8px;
     font-size: 1rem;
     transition: border-color 0.3s ease;
+    margin-right: 16px;
   }
   
   .home__search:focus {
@@ -59,6 +60,10 @@
   @media (max-width: 768px) {
     .home__title {
       font-size: 2rem;
+      text-align: left;
+    }
+    .home__header{
+      flex-direction: column;
     }
   
     .home__subtitle {
