@@ -1,8 +1,26 @@
-import { render, screen } from '@testing-library/react';
+import React from 'react';
+import { render, screen, waitFor } from '@testing-library/react';
 import App from './App';
+import { useFetch } from './hooks/useFetch'; 
 
-test('renders learn react link', () => {
+jest.mock('./hooks/useFetch');
+
+const mockRepos = [
+  {
+    id: 1,
+    name: 'Test Repo',
+    description: 'This is a test repo',
+  },
+];
+
+test('renders the home page after loading', async () => {
+  useFetch.mockReturnValue({
+    data: mockRepos,
+    loading: false,
+    error: null,
+  });
+
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+
+  await waitFor(() => expect(screen.getByText(/GitHub Repositories/i)).toBeInTheDocument());
 });

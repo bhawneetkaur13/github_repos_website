@@ -1,0 +1,11 @@
+export const REPO_NAME = "Name";
+export const REPO_DESCRIPTION = "Description";
+export const REPO_LANGUAGE = "Language";
+export const REPO_LINK = "Link to Repo";
+export const REPO_FORKS = "Forks";
+export const REPO_ISSUES = "Open Issues";
+export const REPO_WATCHERS = "Watchers";
+export const REPO_NOT_FOUND ="Repo not found"
+export const BACK_TO_REPOS = "Back To Repos"
+export const LOADING="Loading..."
+export const LOADING_ERROR = "Error loading repo details"

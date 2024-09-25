@@ -1,0 +1,55 @@
+.repo-card {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.3s ease; 
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .repo-card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+  }
+  
+  
+  .repo-card__name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    white-space: nowrap;         
+    overflow: hidden;        
+    text-overflow: ellipsis;     
+    max-width: 100%;
+  }
+  
+  .repo-card__description {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #666;
+  }
+  
+ 
+  /* components/molecules/RepoCard.css */
+.repo-card__link {
+    color: #007bff;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border: 2px solid #007bff;
+    border-radius: 4px;
+    transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease; /* Add transitions */
+  }
+  
+  .repo-card__link:hover {
+    background-color: #007bff;
+    color: #fff;
+    transform: scale(1.05);  /* Slightly scale up the button */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+  }
+  
+  
